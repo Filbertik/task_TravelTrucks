@@ -1,0 +1,27 @@
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dadde1;
+    border-radius: 200px;
+    width: 145px;
+    height: 56px;
+    background: transparent;
+    color: #101828;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    transition: filter 0.15s ease, opacity 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+}
+
+.button:hover {
+    border: 1px solid #d84343;
+}
+
+.button:disabled,
+.button[aria-busy="true"] {
+    opacity: 0.6;
+    cursor: not-allowed;
+    filter: none;
+}

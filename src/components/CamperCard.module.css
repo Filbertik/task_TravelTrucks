@@ -1,0 +1,133 @@
+.card {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 24px;
+    align-items: start;
+    border: 1px solid #dadde1;
+    border-radius: 20px;
+    padding: 24px;
+    width: 888px;
+    height: 368px;
+}
+
+.cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    background: #f2f4f7;
+}
+
+.body {
+    min-width: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+}
+
+.title {
+    margin: 0 0 8px;
+    flex: 1 1 auto;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.33333;
+    color: #101828;
+}
+
+.priceFav {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 0 0 auto;
+}
+
+.price {
+    white-space: nowrap;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.33333;
+    color: #101828;
+}
+
+.price::before {
+    content: "€";
+    margin-right: 4px;
+}
+
+.favBtn {
+    background: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+    cursor: pointer;
+    flex: 0 0 auto;
+}
+
+.ratingLink {
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    text-decoration-color: currentColor;
+    white-space: nowrap;
+}
+
+.desc {
+    margin: 10px 0 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #475467;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 12px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.actions {
+    margin-top: 16px;
+}
+
+.moreBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 200px;
+    width: 166px;
+    height: 56px;
+    background: #e44848;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    color: #fff;
+    margin-top: 24px;
+}
+
+.moreBtn:hover {
+    background: #d84343;
+    text-decoration: none;
+}

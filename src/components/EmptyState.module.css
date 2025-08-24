@@ -1,0 +1,17 @@
+.empty {
+    margin: 24px auto;
+    width: fit-content;
+    max-width: 100%;
+    display: grid;
+    row-gap: 4px;
+    color: #101828;
+}
+
+.title {
+    font-weight: 600;
+}
+
+.hint {
+    font-size: 14px;
+    color: #667085;
+}

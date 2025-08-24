@@ -1,0 +1,121 @@
+.panel {
+    --icon-size: 32px;
+    width: 360px;
+}
+
+.chips {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.block {
+    margin-bottom: 16px;
+}
+
+.sectionHead {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #6c717b;
+}
+
+.selectField {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    width: 360px;
+    height: 56px;
+    padding: 0 14px 0 12px;
+    border-radius: 12px;
+    background: #f7f7f7;
+    box-shadow:
+        inset 0 0 0 1px #e5e7eb,
+        inset -14px 0 0 #f7f7f7;
+    transition: box-shadow 0.15s ease;
+    margin: 8px 0 40px;
+}
+
+.selectIcon {
+    flex: 0 0 18px;
+    width: 18px;
+    height: 18px;
+    color: #101828;
+}
+
+.select {
+    flex: 1 1 auto;
+    height: 100%;
+    min-width: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    padding: 0;
+    appearance: auto;
+    -webkit-appearance: menulist;
+    font: inherit;
+    line-height: normal;
+    color: #101828;
+    cursor: pointer;
+}
+
+.select option {
+    background: #fff;
+    color: #101828;
+}
+
+.sectionSubTitle {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #101828;
+    margin: 32px 0 20px;
+}
+
+.sectionUnderline {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.sectionUnderline::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background: #dadde1;
+    width: min(360px, 100%);
+    border-radius: 1px;
+    margin-top: 24px;
+}
+
+.actions {
+    margin-top: 16px;
+}
+
+.searchBtn {
+    width: 166px;
+    height: 56px;
+    border: none;
+    border-radius: 200px;
+    background: #e44848;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    cursor: pointer;
+    transition: filter 0.15s ease, transform 0.02s ease-in-out;
+}
+
+.searchBtn:hover {
+    filter: brightness(0.95);
+}
+
+.searchBtn:active {
+    transform: translateY(1px);
+}
+
+.searchBtn:focus-visible {
+    outline: 0;
+    box-shadow: 0 0 0 4px rgba(228, 72, 72, 0.18);
+}

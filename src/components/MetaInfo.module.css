@@ -1,0 +1,51 @@
+.star {
+    width: 16px;
+    height: 16px;
+    flex: 0 0 16px;
+    color: #ffc531;
+}
+
+.ratingLink {
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    text-decoration-color: currentColor;
+    white-space: nowrap;
+}
+
+.location {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-width: 0;
+}
+
+.locIcon {
+    width: 16px;
+    height: 16px;
+    flex: 0 0 16px;
+    color: currentColor;
+}
+
+.locationText {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 0;
+}
+
+.meta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: #101828;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+.subMeta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}

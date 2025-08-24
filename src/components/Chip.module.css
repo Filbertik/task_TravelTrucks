@@ -1,0 +1,77 @@
+.chip {
+    --dir: column;
+    --justify: center;
+    --align: center;
+    --gap: 6px;
+
+    --w: 112px;
+    --h: 96px;
+    --px: 0px;
+    --py: 0px;
+    --radius: 12px;
+
+    --border: #e5e7eb;
+    --bg: #fff;
+    --fg: #101828;
+
+    --icon-size: 32px;
+
+    display: inline-flex;
+    flex-direction: var(--dir);
+    justify-content: var(--justify);
+    align-items: var(--align);
+    gap: var(--gap);
+
+    width: var(--w);
+    height: var(--h);
+    padding: var(--py) var(--px);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--bg);
+    color: var(--fg);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    text-align: center;
+
+    cursor: pointer;
+    user-select: none;
+    transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.active {
+    border-color: #e44848;
+}
+
+.chipIcon {
+    width: var(--icon-size);
+    height: var(--icon-size);
+    flex: 0 0 var(--icon-size);
+}
+
+.variant_tile {}
+
+.variant_pill {
+    --dir: row;
+    --justify: flex-start;
+    --align: center;
+    --gap: 8px;
+
+    --w: auto;
+    --h: 48px;
+    --px: 18px;
+    --py: 12px;
+    --radius: 100px;
+
+    --border: #dadee1;
+    --bg: #f2f4f7;
+
+    --icon-size: 20px;
+}
+
+.static {
+    cursor: default;
+}

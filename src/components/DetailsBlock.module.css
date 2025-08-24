@@ -1,0 +1,47 @@
+.block {
+    display: grid;
+    gap: 24px;
+    margin-top: 100px;
+}
+
+.title {
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #101828;
+}
+
+.divider {
+    height: 1px;
+    background: #e5e7eb;
+}
+
+.grid {
+    display: grid;
+    gap: 24px;
+    margin: 0;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    column-gap: 24px;
+}
+
+.term,
+.desc {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #101828;
+}
+
+.term {
+    font-weight: 600;
+}
+
+.desc {
+    text-align: right;
+}

@@ -1,0 +1,143 @@
+.page {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 48px 0 0 64px;
+  display: grid;
+}
+
+.header {
+  display: grid;
+}
+
+.title {
+  margin: 0 0 8px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  color: #101828;
+}
+
+.price::before {
+  content: "€";
+  margin-right: 4px;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.price {
+  margin-bottom: 28px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  color: #101828;
+}
+
+.gallerySection {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin-bottom: 28px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  align-items: flex-start;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.galleryItem {
+  position: relative;
+  width: 292px;
+  height: 312px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f3f4f6;
+}
+
+.galleryImg {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+.descText {
+  margin-bottom: 60px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #475467;
+}
+
+.tabs {
+  position: relative;
+  display: flex;
+  gap: 12px;
+  padding-bottom: 18px;
+  border-bottom: 2px solid #e5e7eb;
+  margin-bottom: 44px;
+}
+
+.tab {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  padding: 10px 16px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #101828;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.tabActive::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -18px;
+  height: 4px;
+  background: #e44848;
+  border-radius: 2px;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 631px;
+  gap: 24px;
+  align-items: stretch;
+}
+
+.featuresCard {
+  display: grid;
+  padding: 44px 52px;
+  background: #f7f7f7;
+  border-radius: 10px;
+  align-self: stretch;
+}
+
+.reviewsCol {
+  display: grid;
+  gap: 24px;
+}
+
+.bookingCard {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.06), 0 1px 1px rgba(16, 24, 40, 0.04);
+  align-self: stretch;
+}
